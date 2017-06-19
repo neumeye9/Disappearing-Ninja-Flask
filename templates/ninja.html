@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Disappearing Ninjas</title>
+    </head>
+        <body>
+            <div class="wrapper">
+                <h1>The Four Ninjas</h1>
+<!--
+                <h2>{{text}}</h2>
+                <img src="{{url_for('static',filename='img/'+image)}}'" alt="{{text}}">
+-->
+
+
+                <h2>Leonardo</h2>
+                    <img src="{{url_for('static', filename='img/leonardo.jpg')}}" alt="Leonardo">
+                <form action="/ninja/blue", method ="post">
+                    <button class="btn">Learn more about Leonardo!</button>
+                </form>
+                <h2>Michelangelo</h2>
+                    <img src="{{url_for('static', filename='img/michelangelo.jpg')}}" alt="Michelangelo">
+                <form action="/ninja/orange", method ="post">
+                    <button class="btn">Learn more about Michelangelo!</button>
+                </form>
+                <h2>Raphael</h2>
+                    <img src="{{url_for('static', filename='img/raphael.jpg')}}" alt="Raphael">
+                <form action="/ninja/red", method ="post">
+                    <button class="btn">Learn more about Raphael!</button>
+                </form>
+                <h2>Donatello</h2>
+                    <img src="{{url_for('static', filename='img/donatello.jpg')}}" alt="Donatello">
+                <form action="/ninja/purple", method ="post">
+                    <button class="btn">Learn more about Donatello!</button>
+                </form>
+
+            </div>
+        </body>
+</html>
